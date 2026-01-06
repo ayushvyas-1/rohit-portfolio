@@ -39,8 +39,8 @@ export const projects: Project[] = [
       "https://res.cloudinary.com/dpozqchuo/image/upload/f_auto,q_auto/v1765430369/Grey_render_anwqme.png",
       "https://res.cloudinary.com/dpozqchuo/image/upload/f_auto,q_auto/v1765430362/BG_Moduler_Parts_BreakDown_cjv3vt.jpg"
     ],
-    "description": "High-quality 3D render of Cybertruck. Showcasing detailed modeling and texturing.",
-    "software": ["Maya", "Substance painter", "Marmoset toolbag", "UE", "After effect"],
+    "description": "A high-detail industrial sci-fi environment focused on realism and atmosphere. The scene features complex machinery, worn metal surfaces, cables, pipes, and cinematic lighting to create an immersive, gritty mood. Assets were modeled in Maya, textured using Substance Painter with a PBR workflow, and assembled and lit in Unreal Engine. Marmoset Toolbag was used for look development, with final adjustments done in Photoshop.",
+    "software": ["Maya", "Substance Painter", "Unreal Engine", "Marmoset Toolbag", "Photoshop"],
     "date": "Dec 2025",
     "likes": 0,
     "views": 0
@@ -63,8 +63,8 @@ export const projects: Project[] = [
       "https://res.cloudinary.com/dpozqchuo/image/upload/f_auto,q_auto/v1765430542/Render1_zapgeb.png",
       "https://res.cloudinary.com/dpozqchuo/image/upload/f_auto,q_auto/v1765430543/Maps_s4ofem.png"
     ],
-    "description": "High-quality 3D render of Game Ready Gun. Showcasing detailed modeling and texturing.",
-    "software": ["Maya", "Substance painter", "Marmoset toolbag"],
+    "description": "A game-ready weapon asset created with a strong focus on realistic texturing and surface detailing. Wear, scratches, edge damage, and material variation were carefully added to achieve a believable, production-quality look. The model was created in Maya, textured using Substance Painter with a PBR workflow, and rendered in Marmoset Toolbag.",
+    "software": ["Maya", "Substance Painter", "Marmoset Toolbag"],
     "date": "Dec 2025",
     "likes": 0,
     "views": 0
@@ -83,8 +83,8 @@ export const projects: Project[] = [
       "https://res.cloudinary.com/dpozqchuo/image/upload/f_auto,q_auto/v1765430565/render2_Camera_1_j88apa.png",
       "https://res.cloudinary.com/dpozqchuo/image/upload/f_auto,q_auto/v1765430565/render1_Camera_1_xb25iy.png"
     ],
-    "description": "High-quality 3D render of Headphone. Showcasing detailed modeling and texturing.",
-    "software": ["Maya", "Zbrush", "Substance painter", "Marmoset toolbag"],
+    "description": "A high-quality studio headphone model created with a strong focus on texturing and fine surface detailing. Realistic leather, fabric padding, plastic, and metal materials were carefully crafted to achieve an authentic, premium look. The asset was modeled in Maya and ZBrush, textured using Substance Painter, and rendered in Marmoset Toolbag.",
+    "software": ["Maya", "ZBrush", "Substance Painter", "Marmoset Toolbag"],
     "date": "Dec 2025",
     "likes": 0,
     "views": 0
@@ -104,15 +104,15 @@ export const projects: Project[] = [
       "https://res.cloudinary.com/dpozqchuo/image/upload/f_auto,q_auto/v1765430600/IMG_3564_odtprp.jpg",
       "https://res.cloudinary.com/dpozqchuo/image/upload/f_auto,q_auto/v1765430598/IMG_3563_qtvheh.jpg"
     ],
-    "description": "High-quality 3D render of Medicine cabinet. Showcasing detailed modeling and texturing.",
-    "software": ["Maya", "Zbrush", "Substance painter", "Marmoset toolbag"],
+    "description": "A detailed 3D medicine cabinet created with a strong focus on realistic texturing and surface wear. Wood aging, edge damage, dust, and material variation were carefully crafted to give the asset an authentic, lived-in look. The model was created in Maya and ZBrush, textured in Substance Painter, and rendered in Marmoset Toolbag.",
+    "software": ["Maya", "ZBrush", "Substance Painter", "Marmoset Toolbag"],
     "date": "Dec 2025",
     "likes": 0,
     "views": 0
   },
   {
     "id": "radio",
-    "title": "Radio",
+    "title": "Vintage Radio",
     "category": "3D Art",
     "thumbnail": "https://res.cloudinary.com/dpozqchuo/image/upload/f_auto,q_auto/v1765431659/Render2_camera1_FullQuality_pchrui.png",
     "images": [
@@ -126,8 +126,8 @@ export const projects: Project[] = [
       "https://res.cloudinary.com/dpozqchuo/image/upload/f_auto,q_auto/v1765430622/MAPS_ropsni.png",
       "https://res.cloudinary.com/dpozqchuo/image/upload/f_auto,q_auto/v1765430621/GREY_MODEL_tpzisf.png"
     ],
-    "description": "High-quality 3D render of Radio. Showcasing detailed modeling and texturing.",
-    "software": ["Maya", "Substance painter", "Marmoset toolbag", "Photoshop"],
+    "description": "A realistic vintage radio created with a strong focus on texturing and material detail. The model features aged wood, worn metal, dust, and surface imperfections to achieve an authentic, lived-in look. The asset was modeled in Maya, textured using Substance Painter with a PBR workflow, and rendered in Marmoset Toolbag for final presentation.",
+    "software": ["Maya", "Substance Painter", "Marmoset Toolbag"],
     "date": "Dec 2025",
     "likes": 0,
     "views": 0
@@ -145,8 +145,8 @@ export const projects: Project[] = [
       "https://res.cloudinary.com/dpozqchuo/image/upload/f_auto,q_auto/v1765430647/IMG_3545_rel0og.jpg",
       "https://res.cloudinary.com/dpozqchuo/image/upload/f_auto,q_auto/v1765430652/IMG_3544_bqmtqh.jpg"
     ],
-    "description": "High-quality 3D render of War helmet. Showcasing detailed modeling and texturing.",
-    "software": ["Maya", "Substance painter", "Marmoset toolbag"],
+    "description": "A game-ready helmet created with a strong focus on realistic texturing and fine surface detailing. Fabric, plastic, and hard-surface materials were carefully textured with wear, dirt, and subtle damage to achieve a believable combat-ready look. The model was created in Maya, textured in Substance Painter, and rendered in Marmoset Toolbag.",
+    "software": ["Maya", "Substance Painter", "Marmoset Toolbag"],
     "date": "Dec 2025",
     "likes": 0,
     "views": 0

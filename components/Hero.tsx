@@ -51,7 +51,7 @@ const Hero: React.FC = () => {
           {/* Social Icons */}
           <div className="flex items-center gap-6">
             <SocialButton
-              href="#"
+              href="https://www.artstation.com/rohitippakayal01"
               imageSrc="/ArtStation-logomark-white.svg"
               label="ArtStation"
               iconClassName="scale-150"
