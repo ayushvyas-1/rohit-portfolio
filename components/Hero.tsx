@@ -45,7 +45,7 @@ const Hero: React.FC = () => {
           </h1>
 
           <p className="text-zinc-400 text-lg md:text-xl max-w-2xl leading-relaxed mb-10 font-light">
-            Digital artisan crafting immersive <span className="text-white font-medium">3D worlds</span>, high-fidelity <span className="text-white font-medium">characters</span>, and interactive <span className="text-white font-medium">experiences</span>.
+            Digital artisan crafting immersive <span className="text-white font-medium">3D worlds</span>
           </p>
 
           {/* Social Icons */}
