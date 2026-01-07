@@ -32,22 +32,23 @@ const About: React.FC = () => {
             About Me
           </h2>
           <div className="prose prose-invert text-zinc-400 leading-relaxed">
+            <p className="text-xl text-white font-medium mb-2">
+              Hi, I’m Rohit Ippakayal
+            </p>
+            <p className="text-lg text-cyan-400 mb-6">
+              3D Prop Artist | Modeling & Texturing
+            </p>
             <p className="mb-6">
-              Creative and detail-oriented 3D Modeler and Texture Artist with expertise in high-quality
-              3D modeling, UV unwrapping, and realistic texturing. Skilled in shading, materials, and
-              surface detailing, with a strong artistic eye and technical proficiency.
+              A professional 3D Prop Artist with 2 years of studio experience and 40+ completed projects across VFX, animation, news media, and digital content. At AARAARK Studio, I contribute as a key prop artist, helping improve asset quality, production efficiency, and studio showreels through optimized modeling and realistic texturing.
             </p>
             <p>
-              Proficient in industry-standard tools including Maya, ZBrush, Substance Painter, Substance Designer,
-              Photoshop, Marvelous Designer, and Marmoset Toolbag. Experienced in creating
-              immersive assets for games, films, and digital media, with a passion for innovation, learning
-              new tools, and continuous growth in 3D art.
+              I have worked on projects including Cuttoo Kidz Personal Studio Channel, GSTV News stories (No Nonsense), political storytelling content, VFX showreel assets, and multiple confidential studio productions.
             </p>
           </div>
 
           <div className="mt-8 flex flex-wrap gap-4">
             <div className="px-6 py-4 bg-zinc-900 rounded-2xl border border-zinc-800">
-              <span className="block text-3xl font-bold text-white mb-1">1.5+</span>
+              <span className="block text-3xl font-bold text-white mb-1">2+</span>
               <span className="text-sm text-zinc-500 uppercase tracking-wider">Years Exp</span>
             </div>
             <div className="px-6 py-4 bg-zinc-900 rounded-2xl border border-zinc-800">
