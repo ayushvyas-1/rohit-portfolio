@@ -17,7 +17,6 @@ const technicalSkills = [
   'Asset Design',
   'Texturing',
   'Lighting',
-  '3D Cloth Design',
 ];
 
 const About: React.FC = () => {
