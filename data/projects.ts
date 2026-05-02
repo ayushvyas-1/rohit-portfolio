@@ -149,6 +149,32 @@ export const projects: Project[] = [
     "date": "Dec 2025",
     "likes": 0,
     "views": 0
+  },
+  {
+    "id": "heavy-terrain-vehicle",
+    "title": "Heavy Terrain Vehicle",
+    "category": "3D Model",
+    "thumbnail": "https://res.cloudinary.com/dpozqchuo/image/upload/v1777728764/Thumbnil_uqzk0f.jpg",
+    "images": [
+      "https://res.cloudinary.com/dpozqchuo/image/upload/v1777728760/Render1_kkl3r3.jpg",
+      "https://res.cloudinary.com/dpozqchuo/image/upload/v1777728760/Render2_l81hdi.jpg",
+      "https://res.cloudinary.com/dpozqchuo/image/upload/v1777728760/Render3_xncrju.jpg",
+      "https://res.cloudinary.com/dpozqchuo/image/upload/v1777728760/Render4_milfua.jpg",
+      "https://res.cloudinary.com/dpozqchuo/image/upload/v1777728761/Render5_q8xqib.jpg",
+      "https://res.cloudinary.com/dpozqchuo/image/upload/v1777728761/Render6_obkbms.jpg",
+      "https://res.cloudinary.com/dpozqchuo/image/upload/v1777728762/Render7_xcdanw.jpg",
+      "https://res.cloudinary.com/dpozqchuo/image/upload/v1777728764/Render8_yoljo0.jpg",
+      "https://res.cloudinary.com/dpozqchuo/image/upload/v1777728762/Render9_hycsvc.jpg",
+      "https://res.cloudinary.com/dpozqchuo/image/upload/v1777728759/Grey_And_Wireframe1_yn0awg.jpg",
+      "https://res.cloudinary.com/dpozqchuo/image/upload/v1777728759/Grey_And_Wireframe2_cljy3d.jpg"
+
+
+    ],
+    "description": "A high-detail sci-fi vehicle designed for rugged terrain and exploration. This project reflects my dedication to building a production-ready asset while improving my hard-surface skills.I focused on clean topology, strong shape design, and precise detailing to achieve a balanced and realistic look. The model was created in Maya, textured in Substance Painter using a PBR workflow, and rendered in Arnold. Through this process, I explored material definition, surface wear, and lighting to enhance realism and overall presentation. Every stage was approached with attention to detail and a focus on continuous learning.",
+    "software": ["Maya", "Substance Painter", "Arnold"],
+    "date": "May 2026",
+    "likes": 0,
+    "views": 0
   }
 ];
 

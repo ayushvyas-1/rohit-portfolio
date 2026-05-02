@@ -10,6 +10,7 @@ const software = [
   { name: 'Substance Painter', icon: '/substance-3d-painter.png' },
   { name: 'Zbrush', icon: '/zbrush.png' },
   { name: 'Marmoset Toolbag', icon: '/marmoset.png' },
+  { name: 'Blender', icon: '/blender.png' },
 ];
 
 const technicalSkills = [
