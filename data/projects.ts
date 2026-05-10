@@ -28,6 +28,7 @@ export const projects: Project[] = [
       "https://res.cloudinary.com/dpozqchuo/image/upload/v1777728762/Render7_xcdanw.jpg",
       "https://res.cloudinary.com/dpozqchuo/image/upload/v1777728764/Render8_yoljo0.jpg",
       "https://res.cloudinary.com/dpozqchuo/image/upload/v1777728762/Render9_hycsvc.jpg",
+      "https://res.cloudinary.com/dpozqchuo/image/upload/v1777728763/Render10_v8p9sd.jpg",
       "https://res.cloudinary.com/dpozqchuo/image/upload/v1777728759/Grey_And_Wireframe1_yn0awg.jpg",
       "https://res.cloudinary.com/dpozqchuo/image/upload/v1777728759/Grey_And_Wireframe2_cljy3d.jpg"
 
