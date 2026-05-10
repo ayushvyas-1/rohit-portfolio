@@ -20,11 +20,11 @@ const ProjectCard: React.FC<Props> = ({ project, index }) => {
       transition={{ delay: index * 0.1 }}
     >
       <Link href={`/project/${project.id}`} className="group block relative overflow-hidden rounded-xl bg-zinc-900">
-        <div className="aspect-[4/3] overflow-hidden">
+        <div className="aspect-video overflow-hidden">
           <img
             src={project.thumbnail}
             alt={project.title}
-            className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100"
+            className="w-full h-full object-contain transform transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100"
           />
         </div>
 

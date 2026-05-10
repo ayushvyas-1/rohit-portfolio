@@ -48,7 +48,7 @@ const Navbar: React.FC = () => {
                     className="absolute top-full right-0 mt-3 w-48 bg-[#09090b] border border-white/10 rounded-xl shadow-xl overflow-hidden p-1"
                   >
                     <a
-                      href="mailto:contact@rohit.com"
+                      href="mailto:ippakayalrohit01@gmail.com"
                       className="flex items-center gap-3 px-4 py-3 text-zinc-400 hover:text-white hover:bg-white/5 rounded-lg transition-colors"
                       onClick={() => setShowContact(false)}
                     >
@@ -56,7 +56,7 @@ const Navbar: React.FC = () => {
                       <span>Email</span>
                     </a>
                     <a
-                      href="https://wa.me/1234567890" // Replace with actual number
+                      href="https://wa.me/9191068 90873" // Replace with actual number
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-3 px-4 py-3 text-zinc-400 hover:text-white hover:bg-white/5 rounded-lg transition-colors"

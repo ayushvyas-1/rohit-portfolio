@@ -1,26 +1,113 @@
 'use client';
 
-import React from 'react';
-import { Instagram, Linkedin, Twitter, Box } from 'lucide-react';
+import React, { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+
+const NetworkBackground: React.FC = () => {
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d')!;
+
+    const DOTS = 90;
+    const MAX_DIST = 140;
+    const SPEED = 0.8;
+    const CYAN: [number, number, number] = [34, 211, 238];
+    const PURPLE: [number, number, number] = [168, 85, 247];
+
+    const resize = () => {
+      canvas.width = canvas.offsetWidth;
+      canvas.height = canvas.offsetHeight;
+    };
+    resize();
+    window.addEventListener('resize', resize);
+
+    const dots = Array.from({ length: DOTS }, () => ({
+      x: Math.random() * canvas.width,
+      y: Math.random() * canvas.height,
+      vx: (Math.random() - 0.5) * SPEED,
+      vy: (Math.random() - 0.5) * SPEED,
+      r: Math.random() * 1.5 + 1.2,
+    }));
+
+    let raf: number;
+
+    const lerp = (a: number, b: number, t: number) => a + (b - a) * t;
+
+    const tick = () => {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      for (const d of dots) {
+        d.x += d.vx;
+        d.y += d.vy;
+        if (d.x < 0 || d.x > canvas.width) d.vx *= -1;
+        if (d.y < 0 || d.y > canvas.height) d.vy *= -1;
+      }
+
+      // Draw connections
+      for (let i = 0; i < dots.length; i++) {
+        for (let j = i + 1; j < dots.length; j++) {
+          const dx = dots[i].x - dots[j].x;
+          const dy = dots[i].y - dots[j].y;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+          if (dist < MAX_DIST) {
+            const t = dist / MAX_DIST;
+            const alpha = (1 - t) * 0.55;
+            const r = Math.round(lerp(CYAN[0], PURPLE[0], t));
+            const g = Math.round(lerp(CYAN[1], PURPLE[1], t));
+            const b = Math.round(lerp(CYAN[2], PURPLE[2], t));
+            ctx.strokeStyle = `rgba(${r},${g},${b},${alpha})`;
+            ctx.lineWidth = 0.8;
+            ctx.beginPath();
+            ctx.moveTo(dots[i].x, dots[i].y);
+            ctx.lineTo(dots[j].x, dots[j].y);
+            ctx.stroke();
+          }
+        }
+      }
+
+      // Draw dots with glow
+      for (const d of dots) {
+        const grad = ctx.createRadialGradient(d.x, d.y, 0, d.x, d.y, d.r * 2.5);
+        grad.addColorStop(0, 'rgba(34,211,238,0.95)');
+        grad.addColorStop(1, 'rgba(168,85,247,0)');
+        ctx.fillStyle = grad;
+        ctx.beginPath();
+        ctx.arc(d.x, d.y, d.r * 2.5, 0, Math.PI * 2);
+        ctx.fill();
+      }
+
+      raf = requestAnimationFrame(tick);
+    };
+
+    tick();
+    return () => {
+      cancelAnimationFrame(raf);
+      window.removeEventListener('resize', resize);
+    };
+  }, []);
+
+  return (
+    <>
+      <canvas
+        ref={canvasRef}
+        className="absolute inset-0 w-full h-full"
+      />
+      {/* Subtle dark vignette overlay */}
+      <div className="absolute inset-0 bg-radial-[ellipse_at_center] from-transparent via-black/40 to-black/80 pointer-events-none" />
+    </>
+  );
+};
 
 const Hero: React.FC = () => {
   return (
     <section className="relative min-h-screen w-full overflow-hidden bg-[#050505] flex items-center justify-center">
 
-      {/* Background Image with Blur */}
-      <div className="absolute inset-0 z-0">
-        <Image
-          src="/IMG_1010.PNG"
-          alt="Background"
-          fill
-          className="object-cover opacity-60 blur-sm"
-          priority
-        />
-        {/* Dark Overlay for contrast */}
-        <div className="absolute inset-0 bg-black/70" />
-      </div>
+      {/* Network Animation Background */}
+      <NetworkBackground />
 
       {/* Content Overlay */}
       <div className="relative z-10 w-full max-w-5xl px-6 flex flex-col items-center justify-center text-center">
@@ -30,8 +117,6 @@ const Hero: React.FC = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="flex flex-col items-center"
         >
-
-
           <h1 className="font-display font-bold leading-none text-white mb-8 relative group">
             <span className="block text-6xl md:text-8xl lg:text-9xl tracking-tighter hover:scale-105 transition-transform duration-500 cursor-default">
               ROHIT
@@ -39,8 +124,6 @@ const Hero: React.FC = () => {
             <span className="block text-6xl md:text-8xl lg:text-9xl tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-500 to-cyan-400 bg-300% animate-gradient hover:scale-105 transition-transform duration-500 cursor-default mt-2">
               IPPAKAYAL
             </span>
-
-            {/* Decorative glow behind the name */}
             <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/20 to-purple-500/20 blur-[100px] -z-10 rounded-full opacity-50" />
           </h1>
 
@@ -86,12 +169,7 @@ const SocialButton: React.FC<SocialButtonProps> = ({ href, icon: Icon, imageSrc,
   >
     {imageSrc ? (
       <div className={`relative w-8 h-8 flex-shrink-0 group-hover:scale-110 transition-transform ${iconClassName || ''}`}>
-        <Image
-          src={imageSrc}
-          alt={label}
-          fill
-          className="object-contain"
-        />
+        <Image src={imageSrc} alt={label} fill className="object-contain" />
       </div>
     ) : (
       Icon && <Icon size={28} className={`group-hover:scale-110 transition-transform ${iconClassName || ''}`} />
